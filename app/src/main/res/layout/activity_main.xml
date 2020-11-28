@@ -36,7 +36,6 @@
             android:id="@+id/btn_buka_ras_nasional"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_margin="0dp"
             android:layout_weight="200"
             android:padding="16dp"
             android:scaleType="fitCenter"
@@ -54,12 +53,11 @@
             android:id="@+id/btn_buka_ras_revolusi"
             android:layout_width="wrap_content"
             android:layout_height="350dp"
-            android:layout_margin="0dp"
             android:layout_weight="200"
             android:padding="16dp"
             android:scaleType="fitCenter"
             android:src="@drawable/pahlawan_revolusi" />
-
+     
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

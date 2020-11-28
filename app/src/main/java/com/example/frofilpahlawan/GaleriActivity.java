@@ -51,7 +51,7 @@ public class GaleriActivity extends AppCompatActivity {
         ivFotoPahlawan = findViewById(R.id.gambarPahlawan);
 
         txJudul = findViewById(R.id.txJudul);
-        txJudul.setText("Pahlawan"+kategoriPahlawaan);
+        txJudul.setText("Pahlawan "+kategoriPahlawaan);
         txNama = findViewById(R.id.txNama);
         txNama.setText(""+txNama);
 

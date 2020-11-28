@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btnNasional,btnRevolusi;
+    ImageButton btnKemerdekaan,btnRevolusi;
     public static final String JENIS_GALERI_KEY = "JENIS_GALERI";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +20,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void inisialisasiView() {
-        btnNasional = findViewById(R.id.btn_buka_ras_nasional);
+        btnKemerdekaan = findViewById(R.id.btn_buka_ras_nasional);
         btnRevolusi = findViewById(R.id.btn_buka_ras_revolusi);
-        btnNasional.setOnClickListener(view -> bukaGaleri("Nasional"));
+        btnKemerdekaan.setOnClickListener(view -> bukaGaleri("Kemerdekaan"));
         btnRevolusi.setOnClickListener(view -> bukaGaleri("Revolusi"));
 
     }
 
 
     private void bukaGaleri(String kategoriPahlawan) {
-        Log.d("MAIN","Buka activity Nasional");
+        Log.d("MAIN","Buka activity Kemerdekaan");
         Intent intent = new Intent(this, GaleriActivity.class);
         intent.putExtra(JENIS_GALERI_KEY, kategoriPahlawan);
         startActivity(intent);
